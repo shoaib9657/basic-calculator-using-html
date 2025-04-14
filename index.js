@@ -48,7 +48,6 @@ function operate(a, b, operator) {
     case '+': return a + b;
     case '-': return a - b;
     case '*': return a * b;
-    case '.': return a . b
     case '/': return b !== 0 ? a / b : 'Error';
     default: return b;
   }
