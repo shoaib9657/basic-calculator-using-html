@@ -3,8 +3,9 @@ let firstOperand = null;
 let currentOperation = null;
 
 function appendNumber(number) {
-  currentInput += number;
-  updateDisplay();
+    if (number === '.' && currentInput.includes('.')) return;
+    currentInput += number.toString();  
+    updateDisplay();
 }
 
 function setOperation(operator) {
